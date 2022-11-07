@@ -1,3 +1,7 @@
+function editsubmissions(array,index,score) {
+    return array[index].score = score;
+}
+
 // function 6
 const findSubmissionByName = function(array, name) {
     return array.find( person => person.name === name )
@@ -36,6 +40,7 @@ const filter90andAbove = function(array) {
 }
 
 export {
+    editsubmissions,
     findSubmissionByName,
     findLowestScore,
     findAverageScore,

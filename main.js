@@ -1,4 +1,5 @@
 import {
+    editsubmissions,
     findSubmissionByName,
     findLowestScore,
     findAverageScore,
@@ -33,10 +34,12 @@ let submissions = [
     },
 ]
 
-console.table(submissions);
 
+console.log(editsubmissions(submissions, 2, 45));
 console.log(findSubmissionByName(submissions,"joe"));
 console.log(findLowestScore(submissions));
 console.log(findAverageScore(submissions));
 console.log(filterPassing(submissions));
 console.log(filter90andAbove(submissions));
+
+console.table(submissions);
